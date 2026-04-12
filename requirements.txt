@@ -1,0 +1,19 @@
+# ──── AMS (기존) ────
+huggingface_hub
+
+# ──── Qdrant 하이브리드 RAG (추가) ────
+# 1단계: API 게이트웨이 & 시맨틱 캐싱
+fastapi
+uvicorn[standard]
+numpy
+redis
+
+# 2단계: 쿼리 최적화 (SLM)
+requests
+python-dotenv
+
+# 3단계: Qdrant 하이브리드 검색
+qdrant-client
+
+# 4단계: 리랭킹 & 생성
+google-generativeai
